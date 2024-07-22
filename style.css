@@ -1,0 +1,78 @@
+:root {
+  --THEME_BG_COLOR: #2495ed;
+  --THEME_NAVBAR_TAB_BG_COLOR: #6495ed;
+  --THEME_NAVBAR_BG_COLOR: #faf0e6;
+  --THEME_NAVBAR_TAB_BORDER_COLOR: #000000;
+  --THEME_BACKGROUND_BG_COLOR: #faf0e6;
+}
+
+body {
+  background-color: var(--THEME_BG_COLOR);
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-content: justify;
+
+  padding: 5%;
+}
+
+.heading {
+  text-align: center;
+  font-size: xx-large;
+
+  font-family: "Cedarville Cursive";
+  font-weight: 100;
+}
+
+.paragraph {
+  text-align: center;
+  font-size: large;
+}
+
+.navbar {
+  display: flex;
+  flex: auto;
+  flex-direction: row;
+
+  background-color: var(--THEME_NAVBAR_BG_COLOR);
+}
+
+.tab {
+  display: flex;
+  flex: auto;
+  padding: 1em;
+  margin: 1em;
+
+  border-width: medium;
+  border-radius: 0.2em;
+  border-style: solid;
+  border-color: var(--THEME_NAVBAR_TAB_BORDER_COLOR);
+
+  justify-content: center;
+
+  font-family: "Cedarville Cursive";
+  font-weight: 400;
+  font-size: xx-large;
+
+  background-color: var(--THEME_NAVBAR_TAB_BG_COLOR);
+}
+
+.background {
+  display: flex;
+  flex: auto;
+  flex-direction: column;
+  align-content: center;
+
+  padding: 5%;
+
+  background-color: var(--THEME_BACKGROUND_BG_COLOR);
+}
+
+/* fonts */
+.cedarville-cursive-regular {
+  font-family: "Cedarville Cursive", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
