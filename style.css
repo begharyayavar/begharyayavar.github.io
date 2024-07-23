@@ -1,15 +1,23 @@
 :root {
   --THEME_BG_COLOR: #2495ed;
-  --THEME_NAVBAR_TAB_BG_COLOR: #6495ed;
+  --THEME_NAVBAR_TAB_BG_COLOR: rgba(100, 148, 237, 0.498);
   --THEME_NAVBAR_BG_COLOR: #faf0e6;
   --THEME_NAVBAR_TAB_BORDER_COLOR: #000000;
   --THEME_BACKGROUND_BG_COLOR: #faf0e6;
+  --THEME_HEADER_COLOR: #f08080;
+  --HEADER_TEXT_COLOR: #fa8072;
 }
 
 body {
   background-color: var(--THEME_BG_COLOR);
 }
 
+.header-background {
+  background-image: url(assets/header-background.jpg);
+
+  border-radius: 3%;
+  background-size: cover;
+}
 .header {
   display: flex;
   flex-direction: column;
@@ -20,34 +28,53 @@ body {
 
 .heading {
   text-align: center;
-  font-size: xx-large;
+  font-size: xxx-large;
 
   font-family: "Cedarville Cursive";
   font-weight: 100;
+
+  -webkit-text-stroke-width: 0.06em;
+  -webkit-text-stroke-color: black;
+
+  backdrop-filter: blur(0.03em);
+
+  color: var(--THEME_HEADER_COLOR);
 }
 
 .paragraph {
   text-align: center;
-  font-size: large;
+  font-size: x-large;
+
+  backdrop-filter: invert(100%) blur(0.04em);
+
+  border-radius: 1em;
+}
+
+.header-paragraph-text {
+  color: var(--HEADER_TEXT_COLOR);
+  -webkit-text-stroke-width: 0.02em;
+  -webkit-text-stroke-color: white;
 }
 
 .navbar {
   display: flex;
   flex: auto;
   flex-direction: row;
+  flex-wrap: wrap;
 
-  background-color: var(--THEME_NAVBAR_BG_COLOR);
+  /* background-color: var(--THEME_NAVBAR_BG_COLOR); */
 }
 
 .tab {
   display: flex;
-  flex: auto;
+  flex: 1;
   padding: 1em;
   margin: 1em;
 
   border-width: medium;
-  border-radius: 0.2em;
-  border-style: solid;
+  border-radius: 0.4em;
+  /* border-color: #000000; */
+  /* border-style: dashed; */
   border-color: var(--THEME_NAVBAR_TAB_BORDER_COLOR);
 
   justify-content: center;
@@ -57,6 +84,7 @@ body {
   font-size: xx-large;
 
   background-color: var(--THEME_NAVBAR_TAB_BG_COLOR);
+  backdrop-filter: blur(0.02em);
 }
 
 .background {
@@ -65,7 +93,7 @@ body {
   flex-direction: column;
   align-content: center;
 
-  padding: 5%;
+  padding: 1%;
 
   background-color: var(--THEME_BACKGROUND_BG_COLOR);
 }

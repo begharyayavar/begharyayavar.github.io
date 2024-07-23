@@ -24,25 +24,37 @@
     />
 
     <script src="script.js"></script>
+    <!-- HTMX-->
+    <script src="https://unpkg.com/htmx.org@2.0.1"></script>
   </head>
   <body>
     <div class="background">
-      <div class="header">
-        <div class="heading">
-          <h1>Welcome to my teeny tiny world</h1>
+      <div class="header-background">
+        <div class="header">
+          <div class="heading">
+            <h1>Welcome to my teeny tiny world</h1>
+          </div>
+          <br /><br />
+          <div class="paragraph header-paragraph-text">
+            <p>
+              Here we be having content on music, art, photography, coding,
+              mathematics, sciences, and so much more. Come take a look around!
+            </p>
+          </div>
         </div>
-        <div class="paragraph">
-          <p>
-            Here we be having content on music, art, photography, coding,
-            mathematics, sciences, and so much more. Come take a look around!
-          </p>
+        <div class="navbar">
+          <div class="tab" onclick="Home()">Home</div>
+          <div class="tab" onclick="Blog()">Blog</div>
+          <div class="tab">Projects</div>
+          <div class="tab">About me</div>
         </div>
       </div>
       <div class="navbar">
-        <div class="tab">Home</div>
-        <div class="tab">Blog</div>
-        <div class="tab">Projects</div>
-        <div class="tab">About me</div>
+        <div class="tab">Photography</div>
+        <div class="tab">Cooking</div>
+        <div class="tab">Art,Music and Movies</div>
+        <div class="tab">Games</div>
+        <div class="tab">Books</div>
       </div>
     </div>
   </body>
