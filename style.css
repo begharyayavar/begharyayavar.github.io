@@ -12,6 +12,17 @@ body {
   background-color: var(--THEME_BG_COLOR);
 }
 
+.background {
+  display: flex;
+  flex: auto;
+  flex-direction: column;
+  align-content: center;
+
+  padding: 1%;
+
+  background-color: var(--THEME_BACKGROUND_BG_COLOR);
+}
+
 .header-background {
   background-image: url(assets/header-background.jpg);
 
@@ -21,37 +32,43 @@ body {
 .header {
   display: flex;
   flex-direction: column;
-  align-content: justify;
+  justify-content: center;
 
-  padding: 5%;
+  padding: 3%;
 }
 
 .heading {
   text-align: center;
   font-size: xxx-large;
 
-  font-family: "Cedarville Cursive";
+  font-family: "Pangolin";
   font-weight: 100;
 
   -webkit-text-stroke-width: 0.06em;
   -webkit-text-stroke-color: black;
 
-  backdrop-filter: blur(0.03em);
+  backdrop-filter: blur(0.02em);
 
   color: var(--THEME_HEADER_COLOR);
 }
 
 .paragraph {
-  text-align: center;
-  font-size: x-large;
+  padding: inherit;
 
-  backdrop-filter: invert(100%) blur(0.04em);
+  text-align: center;
+  font-size: xx-large;
+
+  /* backdrop-filter: invert(100%) blur(0.02em); */
+  backdrop-filter: brightness(40%) blur(0.02em);
 
   border-radius: 1em;
 }
 
 .header-paragraph-text {
   color: var(--HEADER_TEXT_COLOR);
+  font-family: "Pangolin";
+  font-weight: 300;
+
   -webkit-text-stroke-width: 0.02em;
   -webkit-text-stroke-color: white;
 }
@@ -69,7 +86,7 @@ body {
   display: flex;
   flex: 1;
   padding: 1em;
-  margin: 1em;
+  margin: 0.5em;
 
   border-width: medium;
   border-radius: 0.4em;
@@ -79,28 +96,133 @@ body {
 
   justify-content: center;
 
-  font-family: "Cedarville Cursive";
+  font-family: "Pangolin";
   font-weight: 400;
   font-size: xx-large;
 
+  color: white;
+
   background-color: var(--THEME_NAVBAR_TAB_BG_COLOR);
-  backdrop-filter: blur(0.02em);
+  backdrop-filter: invert(100%) blur(0.02em);
 }
 
-.background {
+.shelf {
+  display: flex;
+  flex-direction: column;
+}
+
+.shelf-row {
   display: flex;
   flex: auto;
-  flex-direction: column;
-  align-content: center;
-
-  padding: 1%;
-
-  background-color: var(--THEME_BACKGROUND_BG_COLOR);
+  padding: 1.5em;
+  /* margin: 0.5em; */
 }
 
+.shelf-row-photography {
+  font-family: "Zeyada";
+  font-size: xxx-large;
+  font-weight: 300;
+  color: white;
+
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0), black),
+    url(assets/photography-cover.jpg);
+  background-size: cover;
+  background-position: 50%;
+
+  justify-content: end;
+}
+.shelf-row-cooking {
+  font-family: "Zeyada";
+  font-size: xxx-large;
+  font-weight: 300;
+  color: white;
+
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0), black),
+    url(assets/cooking-cover.jpg);
+  background-size: cover;
+  background-position: 50%;
+
+  justify-content: end;
+}
+.shelf-row-art {
+  font-family: "Zeyada";
+  font-size: xxx-large;
+  font-weight: 300;
+  color: white;
+
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0), black),
+    url(assets/art-cover.jpg);
+  background-size: cover;
+  background-position: 50%;
+
+  justify-content: end;
+}
+.shelf-row-music {
+  font-family: "Zeyada";
+  font-size: xxx-large;
+  font-weight: 300;
+  color: white;
+
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0), black),
+    url(assets/music-cover.jpg);
+  background-size: cover;
+  background-position: 50%;
+
+  justify-content: end;
+}
+.shelf-row-movies {
+  font-family: "Zeyada";
+  font-size: xxx-large;
+  font-weight: 300;
+  color: white;
+
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0), black),
+    url(assets/movies-cover.jpg);
+  background-size: cover;
+  background-position: 50%;
+
+  justify-content: end;
+}
+.shelf-row-games {
+  font-family: "Zeyada";
+  font-size: xxx-large;
+  font-weight: 300;
+  color: white;
+
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0), black),
+    url(assets/games-cover.jpg);
+  background-size: cover;
+  background-position: 50%;
+
+  justify-content: end;
+}
+.shelf-row-books {
+  font-family: "Zeyada";
+  font-size: xxx-large;
+  font-weight: 300;
+  color: white;
+
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0), black),
+    url(assets/books-cover.jpg);
+  background-size: cover;
+  background-position: 50%;
+
+  justify-content: end;
+}
 /* fonts */
 .cedarville-cursive-regular {
   font-family: "Cedarville Cursive", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.pangolin-regular {
+  font-family: "Pangolin", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.zeyada-regular {
+  font-family: "Zeyada", cursive;
   font-weight: 400;
   font-style: normal;
 }
